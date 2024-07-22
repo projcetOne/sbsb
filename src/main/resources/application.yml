@@ -3,16 +3,16 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     #    각자 PC에 만들어놓은 Database이름을 써야 합니다.
-    url: jdbc:mysql://database-2.czcqeu2cyftu.ap-northeast-2.rds.amazonaws.com/exam # Database이름 ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url:  jdbc:mysql://127.0.0.1:3306/covenant # Database이름 ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     #    mysql에 생성한 사용자 계정 정보를 써야 합니다.
     username: root
-    password: 12345678
+    password: 1234
   thymeleaf:
     cache: false
 
   # spring data jpa 설정
   jpa:
-    database-platform: org.hibernate.dialect.MySQL57Dialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
     open-in-view: false
     show-sql: true
     hibernate:
