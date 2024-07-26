@@ -8,6 +8,7 @@ public class QrApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(QrApplication.class, args);
+		//System.out.println("dd");
 	}
 
 }
