@@ -7,7 +7,10 @@ spring:
     username: root
     password: 12345678
   thymeleaf:
-    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: UTF-8
 
   # spring data jpa 설정
   jpa:
